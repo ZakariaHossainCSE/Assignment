@@ -1,0 +1,109 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(77, 69, 59);
+  
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+  
+}
+
+.banner {
+  text-transform: ;
+ 
+  text-align: right;
+  padding: 250px;
+  background-image: url(zakaria.jpg);
+  background-size: cover;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: rgb(77, 69, 59);
+}
+
+.content {
+  flex: 1 0 60%; /* Adjusted width for main content */
+  padding: 10px;
+  display: flex; /* Added */
+  justify-content: space-between; /* Added */
+}
+
+.blog-column {
+  flex: 0 0 48%; /* Adjusted column width */
+}
+
+.blog-post {
+  margin-bottom: 100px;
+  border: 1px solid brown;
+  padding: 60px;
+  background-color: rgb(37, 94, 75);
+}
+
+aside {
+  flex: 1 0 30%; /* Adjusted width for aside */
+  padding: 10px;
+}
+
+footer {
+  background-color:rgb(45, 119, 119);
+  text-align: center;
+  padding: 10px;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+  main {
+      flex-direction: column; /* Stack main and aside on top of each other */
+  }
+
+  .content, aside {
+      flex: 1 0 auto; /* Allow them to grow to fit the width */
+      width: 100%; /* Take up full width */
+      margin-bottom: 20px; /* Add some space between them */
+  }
+
+  .blog-column {
+      flex: 1 0 auto; /* Adjust blog column width */
+      width: 100%; /* Take up full width */
+  }
+}
